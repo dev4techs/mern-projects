@@ -27,7 +27,96 @@
 .App-link {
   color: #61dafb;
 }
+.container
+{
+  height: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
+  background: #022d24;
+  background: linear-gradient(to left,#b6fbff#83a4d4,);
+
+  color: #f1efef;
+}
+.headline-primary
+{
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing:2px;
+
+}
+.item
+{
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.item > span{
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item > span > a
+{
+  color: inherit;
+}
+
+.button
+{
+  background: transparent;
+  border: 1px solid #d0ff00;
+  border-radius: 10px;
+  padding-left: 20px;
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.1s ease-in;
+}
+
+.button:hover
+{
+background: #171212;
+color: #ff0000;
+}
+
+.button-small
+{
+  padding: 5px;
+}
+
+.button-large
+{
+  padding: 5px;
+}
+
+.search-form
+{
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  align-items: baseline;
+  color: inherit;
+}
+
+.label
+{
+  /* border-top: 1px solid #eeff00;
+  border-left: 1px solid #eeff00; */
+  padding-right: 20px;
+  font-size: 24px;
+}
+
+.input
+{
+  border: none;
+  border-bottom: 1px solid #eeff00;
+  background-color: transparent;
+
+  font-size: 24px;
+  color: inherit;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
